@@ -1,0 +1,1115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/ico/favicon.ico">
+    <title>liveditions</title>
+
+    <style type="text/css">
+        .gm-style .gm-style-mtc label, .gm-style .gm-style-mtc div {
+            font-weight: 400;
+        }
+    </style>
+
+    <style type="text/css">
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0,0,0,0.45);
+            text-align: center;
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto,Arial,sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
+
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <style type="text/css">
+        .gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
+            font-size: 10px;
+        }
+    </style>
+    <style type="text/css">
+        @media print {
+            .gm-style .gmnoprint, .gmnoprint {
+                display: none;
+            }
+        }
+
+        @media screen {
+            .gm-style .gmnoscreen, .gmnoscreen {
+                display: none;
+            }
+        }
+    </style>
+    <style type="text/css">
+        .gm-style {
+            font-family: Roboto,Arial,sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+            .gm-style img {
+                max-width: none;
+            }
+    </style>
+
+    <link href="css/vendor/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/lightbox.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/open-iconic-bootstrap.css" rel="stylesheet" type="text/css">
+
+    <!-- CSS Custom -->
+    <link href="css/main-style.css" rel="stylesheet" type="text/css">
+    <link href="css/preview.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body class="classic" data-spy="scroll" data-target=".scrollspy_menu">
+    <ul class="preview-setup hidden-xs">
+        <li class="orange" title="Orange scheme">
+            <a href="#" data-stylesheet="style.css"></a>
+        </li>
+        <li class="green" title="Green scheme">
+
+            <a href="#" data-stylesheet="style_green.css"></a>
+        </li>
+        <li class="blue" title="Blue scheme">
+            <a href="#" data-stylesheet="style_blue.css"></a>
+        </li>
+        <li class="yellow" title="Yellow scheme">
+            <a href="#" data-stylesheet="style_yellow.css"></a>
+        </li>
+        <li class="red" title="Red scheme">
+            <a href="#" data-stylesheet="style_red.css"></a>
+        </li>
+        <li id="menu_top" title="Navbar menu">
+            <a href="#"><span class="oi oi-expand-down"></span></a>
+        </li>
+        <li id="menu_side" title="Sidebar menu">
+            <a href="#"><span class="oi oi-expand-right"></span></a>
+        </li>
+    </ul>
+
+    <!-- PRELOADER
+    ============================== -->
+    <div class="preloader active" style="display: none;">
+        <img src="images/preloader.gif" alt="Loading..." class="preloader__img" style="display: none;">
+    </div>
+
+
+    <!-- NAVBAR
+    ============================== -->
+    <div class="navbar navbar-default navbar__initial navbar-fixed-top scrollspy_menu" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#welcome">Liveditions</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="fullpage__nav nav navbar-nav navbar-right">
+                    <li class="active"><a href="#welcome">Welcome</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+    <!-- SIDEBAR
+    ============================== -->
+    <!-- Sidebar button open -->
+    <div class="hidden sidebar__btn sidebar__btn_open">
+        <span class="sidebar-btn__caption">Menu</span>
+        <span class="oi oi-menu sidebar-btn__icon sidebar-btn-icon__unhover " title="Open menu" aria-hidden="true"></span>
+        <span class="oi oi-arrow-left sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
+    </div>
+
+    <!-- Sidebar menu -->
+    <div class="sidebar__menu sidebar__menu_hidden scrollspy_menu">
+
+        <!-- Sidebar button close -->
+        <div class="sidebar__btn sidebar__btn_close">
+            <span class="sidebar-btn__caption">Menu</span>
+            <span class="oi oi-menu sidebar-btn__icon sidebar-btn-icon__unhover " title="Close menu" aria-hidden="true"></span>
+            <span class="oi oi-arrow-right sidebar-btn__icon sidebar-btn-icon__hover" title="Close menu" aria-hidden="true"></span>
+        </div>
+
+        <!-- Sidebar brand name -->
+        <div class="sidebar-menu__brand">Liveditions</div>
+
+        <!-- Sidebar links -->
+        <ul class="fullpage__nav sidebar-menu__ul nav">
+            <li class="active"><a href="#welcome">Welcome</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+    </div> <!-- / .sidebar-menu__ul -->
+    <!-- WELCOME
+    ============================== -->
+    <div class="welcome_classic" id="welcome">
+        <div class="welcome-classic__inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <!-- Pre heading -->
+                        <p class="heading__pre">
+                            Version 2.2.x
+                        </p>
+
+                        <!-- Heading -->
+                        <h1 class="heading heading_lg">
+                            Welcome to <span class="text-primary">Liveditions</span>
+                        </h1>
+
+                        <!-- Sub heading -->
+                        <p class="heading__sub">
+                            Persist until you succeed...
+                        </p>
+
+                        <!-- Button -->
+                        <div class="text-center">
+
+                            <a href="#about" class="btn btn-xl btn-primary">
+                                <span class="oi oi-arrow-right" title="Find out more" aria-hidden="true"></span>
+                                <span>Find Out More</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div> <!-- / .row -->
+            </div> <!-- / .container -->
+        </div> <!-- / .classic-welcome__inner -->
+    </div> <!-- / .welcome_classic -->
+    <!-- ABOUT
+    ============================== -->
+    <div class="site-wrapper" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                    <div class="lead text-center text">
+                        <em>
+                            Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                        </em>
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper_classic -->
+
+    <div class="site-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- Heading -->
+                    <h1 class="heading">
+                        What's so <span class="text-primary">awesome</span> about it?
+                    </h1>
+
+                    <!-- Sub heading -->
+                    <p class="heading__sub">
+                        Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                    </p>
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- About item #1 -->
+                    <div class="about__item">
+                        <h3 class="about-item__title">
+                            <span class="about-item-title__icon oi oi-tablet" title="Fully responsive" aria-hidden="true"></span> Fully responsive
+                        </h3>
+                        <p class="about-item__content">
+                            Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                        </p>
+                    </div> <!-- / .about__item -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- About item #2 -->
+                    <div class="about__item">
+                        <h3 class="about-item__title">
+                            <span class="about-item-title__icon oi oi-project" title="Built with LESS" aria-hidden="true"></span> Built with LESS
+                        </h3>
+                        <p class="about-item__content">
+                            Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                        </p>
+                    </div> <!-- / .about__item -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- About item #3 -->
+                    <div class="about__item">
+                        <h3 class="about-item__title">
+                            <span class="about-item-title__icon oi oi-envelope-closed" title="Functional contact form" aria-hidden="true"></span> Functional contact form
+                        </h3>
+                        <p class="about-item__content">
+                            Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                        </p>
+                    </div> <!-- / .about__item -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- About item #4 -->
+                    <div class="about__item">
+                        <h3 class="about-item__title">
+                            <span class="about-item-title__icon oi oi-menu" title="Two menu types" aria-hidden="true"></span> Two menu types
+                        </h3>
+                        <p class="about-item__content">
+                            Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                        </p>
+                    </div> <!-- / .about__item -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- About item #5 -->
+                    <div class="about__item">
+                        <h3 class="about-item__title">
+                            <span class="about-item-title__icon oi oi-layers" title="X layout options" aria-hidden="true"></span> Six layout options
+                        </h3>
+                        <p class="about-item__content">
+                            Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                        </p>
+                    </div> <!-- / .about__item -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- About item #6 -->
+                    <div class="about__item">
+                        <h3 class="about-item__title">
+                            <span class="about-item-title__icon oi oi-brush" title="5 color schemes" aria-hidden="true"></span> 5 color schemes
+                        </h3>
+                        <p class="about-item__content">
+                            Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                        </p>
+                    </div> <!-- / .about__item -->
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper_classic -->
+    <!-- PORTFOLIO
+    ============================== -->
+    <div class="site-wrapper" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- Heading -->
+                    <h1 class="heading">
+                        A picture paints a <span class="text-primary">thousand</span> words
+                    </h1>
+
+                    <!-- Sub heading -->
+                    <p class="heading__sub">
+                        Some of the works we can be proud of. Feel free to contact us if you like what you see.
+                    </p>
+
+                </div>
+                <div class="col-xs-12">
+
+                    <!-- Portfolio navigation -->
+                    <div class="portfolio__nav">
+                        <a href="#" class="btn btn-lg btn-default" data-filter="*">
+                            <span class="oi oi-random" title="All" aria-hidden="true"></span>
+                            <span>All</span>
+                        </a>
+                        <a href="#" class="btn btn-lg btn-default" data-filter=".filter_category_1">
+                            <span class="oi oi-random" title="Category 1" aria-hidden="true"></span>
+                            <span>Category 1</span>
+                        </a>
+                        <a href="#" class="btn btn-lg btn-default" data-filter=".filter_category_2">
+                            <span class="oi oi-random" title="Category 2" aria-hidden="true"></span>
+                            <span>Category 2</span>
+                        </a>
+                        <a href="#" class="btn btn-lg btn-default" data-filter=".filter_category_3">
+                            <span class="oi oi-random" title="Category 3" aria-hidden="true"></span>
+                            <span>Category 3</span>
+                        </a>
+                        <a href="#" class="btn btn-lg btn-default" data-filter=".filter_category_4">
+                            <span class="oi oi-random" title="Category 4" aria-hidden="true"></span>
+                            <span>Category 4</span>
+                        </a>
+                    </div> <!-- / .portfolio__nav -->
+
+                </div>
+            </div> <!-- / .row -->
+            <!-- Portfolio items -->
+            <div class="portfolio__items" style="position: relative; height: 397.417px;">
+
+                <div class="row">
+                    <div class="col-sm-4 col-md-3 filter__item filter_category_1 filter_category_2 filter_category_3" style="position: absolute; left: 0px; top: 0px;">
+
+                        <!-- Portfolio item #1 -->
+                        <div class="portfolio__item">
+                            <a href="assets/img/portfolio-screenshot_1.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #1">
+
+                                <!-- Image -->
+                                <img class="img-responsive" src="assets/img/portfolio-screenshot_1.jpg" alt="...">
+
+                                <!-- Mask -->
+                                <div class="portfolio-item__mask">
+                                    <div class="portfolio-item-mask__wrapper">
+                                        <div class="portfolio-item-mask-wrapper__inner">
+                                            <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                                            <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                                            <p class="portfolio-item-mask__content animated fadeInDown">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                                </div> <!-- / .portfolio-item__mask -->
+
+                            </a>
+                        </div> <!-- / .portfolio__item -->
+
+                    </div>
+                    <div class="col-sm-4 col-md-3 filter__item filter_category_4 filter_category_1 filter_category_2" style="position: absolute; left: 285px; top: 0px;">
+
+                        <!-- Portfolio item #2 -->
+                        <div class="portfolio__item">
+                            <a href="assets/img/portfolio-screenshot_2.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #2">
+
+                                <!-- Image -->
+                                <img class="img-responsive" src="assets/img/portfolio-screenshot_2.jpg" alt="...">
+
+                                <!-- Mask -->
+                                <div class="portfolio-item__mask">
+                                    <div class="portfolio-item-mask__wrapper">
+                                        <div class="portfolio-item-mask-wrapper__inner">
+                                            <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                                            <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                                            <p class="portfolio-item-mask__content animated fadeInDown">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                                </div> <!-- / .portfolio-item__mask -->
+
+                            </a>
+                        </div> <!-- / .portfolio__item -->
+
+                    </div>
+                    <div class="col-sm-4 col-md-3 filter__item filter_category_3 filter_category_4 filter_category_1" style="position: absolute; left: 570px; top: 0px;">
+
+                        <!-- Portfolio item #3 -->
+                        <div class="portfolio__item">
+                            <a href="assets/img/portfolio-screenshot_3.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #3">
+
+                                <!-- Image -->
+                                <img class="img-responsive" src="assets/img/portfolio-screenshot_3.jpg" alt="...">
+
+                                <!-- Mask -->
+                                <div class="portfolio-item__mask">
+                                    <div class="portfolio-item-mask__wrapper">
+                                        <div class="portfolio-item-mask-wrapper__inner">
+                                            <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                                            <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                                            <p class="portfolio-item-mask__content animated fadeInDown">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                                </div> <!-- / .portfolio-item__mask -->
+
+                            </a>
+                        </div> <!-- / .portfolio__item -->
+
+                    </div>
+                    <div class="col-sm-4 col-md-3 filter__item filter_category_2 filter_category_3 filter_category_4" style="position: absolute; left: 855px; top: 0px;">
+
+                        <!-- Portfolio item #4 -->
+                        <div class="portfolio__item">
+                            <a href="assets/img/portfolio-screenshot_4.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #4">
+
+                                <!-- Image -->
+                                <img class="img-responsive" src="assets/img/portfolio-screenshot_4.jpg" alt="...">
+
+                                <!-- Mask -->
+                                <div class="portfolio-item__mask">
+                                    <div class="portfolio-item-mask__wrapper">
+                                        <div class="portfolio-item-mask-wrapper__inner">
+                                            <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                                            <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                                            <p class="portfolio-item-mask__content animated fadeInDown">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                                </div> <!-- / .portfolio-item__mask -->
+
+                            </a>
+                        </div> <!-- / .portfolio__item -->
+
+                    </div>
+                    <div class="col-sm-4 col-md-3 filter__item filter_category_1 filter_category_2 filter_category_3 filter_category_4" style="position: absolute; left: 0px; top: 198px;">
+
+                        <!-- Portfolio item #5 -->
+                        <div class="portfolio__item">
+                            <a href="assets/img/portfolio-screenshot_5.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #5">
+
+                                <!-- Image -->
+                                <img class="img-responsive" src="assets/img/portfolio-screenshot_5.jpg" alt="...">
+
+                                <!-- Mask -->
+                                <div class="portfolio-item__mask">
+                                    <div class="portfolio-item-mask__wrapper">
+                                        <div class="portfolio-item-mask-wrapper__inner">
+                                            <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                                            <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                                            <p class="portfolio-item-mask__content animated fadeInDown">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                                </div> <!-- / .portfolio-item__mask -->
+
+                            </a>
+                        </div> <!-- / .portfolio__item -->
+
+                    </div>
+                    <div class="col-sm-4 col-md-3 filter__item filter_category_4 filter_category_1 filter_category_2" style="position: absolute; left: 285px; top: 198px;">
+
+                        <!-- Portfolio item #6 -->
+                        <div class="portfolio__item">
+                            <a href="assets/img/portfolio-screenshot_6.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #6">
+
+                                <!-- Image -->
+                                <img class="img-responsive" src="assets/img/portfolio-screenshot_6.jpg" alt="...">
+
+                                <!-- Mask -->
+                                <div class="portfolio-item__mask">
+                                    <div class="portfolio-item-mask__wrapper">
+                                        <div class="portfolio-item-mask-wrapper__inner">
+                                            <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                                            <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                                            <p class="portfolio-item-mask__content animated fadeInDown">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                                </div> <!-- / .portfolio-item__mask -->
+
+                            </a>
+                        </div> <!-- / .portfolio__item -->
+
+                    </div>
+                    <div class="col-sm-4 col-md-3 filter__item filter_category_1 filter_category_3 filter_category_3" style="position: absolute; left: 570px; top: 198px;">
+
+                        <!-- Portfolio item #7 -->
+                        <div class="portfolio__item">
+                            <a href="assets/img/portfolio-screenshot_1.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #7">
+
+                                <!-- Image -->
+                                <img class="img-responsive" src="assets/img/portfolio-screenshot_1.jpg" alt="...">
+
+                                <!-- Mask -->
+                                <div class="portfolio-item__mask">
+                                    <div class="portfolio-item-mask__wrapper">
+                                        <div class="portfolio-item-mask-wrapper__inner">
+                                            <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                                            <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                                            <p class="portfolio-item-mask__content animated fadeInDown">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                                </div> <!-- / .portfolio-item__mask -->
+
+                            </a>
+                        </div> <!-- / .portfolio__item -->
+
+                    </div>
+                    <div class="col-sm-4 col-md-3 filter__item filter_category_4 filter_category_2 filter_category_2 filter_category_3" style="position: absolute; left: 855px; top: 198px;">
+
+                        <!-- Portfolio item #8 -->
+                        <div class="portfolio__item">
+                            <a href="assets/img/portfolio-screenshot_2.jpg" data-lightbox="portfolio-item__body" data-title="Portfolio item #8">
+
+                                <!-- Image -->
+                                <img class="img-responsive" src="assets/img/portfolio-screenshot_2.jpg" alt="...">
+
+                                <!-- Mask -->
+                                <div class="portfolio-item__mask">
+                                    <div class="portfolio-item-mask__wrapper">
+                                        <div class="portfolio-item-mask-wrapper__inner">
+                                            <span class="portfolio-item-mask__icon oi oi-camera-slr" title="..." aria-hidden="true"></span>
+                                            <h4 class="portfolio-item-mask__title animated fadeInUp">Project Title</h4>
+                                            <p class="portfolio-item-mask__content animated fadeInDown">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </p>
+                                        </div> <!-- / .portfolio-item-mask-wrapper__inner -->
+                                    </div> <!-- / .portfolio-item-mask__wrapper -->
+                                </div> <!-- / .portfolio-item__mask -->
+
+                            </a>
+                        </div> <!-- / .portfolio__item -->
+
+                    </div>
+                </div> <!-- / .row -->
+
+            </div> <!-- / .portfolio__items -->
+
+        </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper_classic -->
+    <!-- PRICING
+    ============================== -->
+    <div class="site-wrapper" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- Heading -->
+                    <h1 class="heading">
+                        That's about <span class="text-primary">6 cups</span> of coffee
+                    </h1>
+
+                    <!-- Sub heading -->
+                    <p class="heading__sub">
+                        Three pricing plans to fit a project of any size. Painless refund guaranteed.
+                    </p>
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <!-- Pricing item -->
+                    <div class="pricing__item">
+
+                        <!-- Pricing title -->
+                        <h3 class="pricing-item__title">Single Application</h3>
+
+                        <!-- Price -->
+                        <div class="pricing-item__price">
+                            $ <span class="pricing-item-price__digits">10</span> /pc.
+                        </div>
+
+                        <!-- Pricing body -->
+                        <div class="pricing-item__body">
+                            <p class="pricing-item-body__content">
+                                Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                            </p>
+                            <a href="#" class="btn btn-lg btn-default">
+                                <span class="oi oi-cart" title="All" aria-hidden="true"></span>
+                                <span>Purchase now</span>
+                            </a>
+                        </div>
+
+                    </div> <!-- / .pricing__item -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- Pricing item -->
+                    <div class="pricing__item">
+
+                        <!-- Pricing title -->
+                        <h3 class="pricing-item__title">Multiple Applications</h3>
+
+                        <!-- Price -->
+                        <div class="pricing-item__price">
+                            $ <span class="pricing-item-price__digits">50</span> /pc.
+                        </div>
+
+                        <!-- Pricing body -->
+                        <div class="pricing-item__body">
+                            <p class="pricing-item-body__content">
+                                Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                            </p>
+                            <a href="#" class="btn btn-lg btn-default">
+                                <span class="oi oi-cart" title="All" aria-hidden="true"></span>
+                                <span>Purchase now</span>
+                            </a>
+                        </div>
+
+                    </div> <!-- / .pricing__item -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- Pricing item -->
+                    <div class="pricing__item">
+
+                        <!-- Pricing title -->
+                        <h3 class="pricing-item__title">Extended License</h3>
+
+                        <!-- Price -->
+                        <div class="pricing-item__price">
+                            $ <span class="pricing-item-price__digits">100</span> /pc.
+                        </div>
+
+                        <!-- Pricing body -->
+                        <div class="pricing-item__body">
+                            <p class="pricing-item-body__content">
+                                Vivamus posuere ut est at gravida. Pellentesque non tempor mauris. Aliquam pharetra velit in vestibulum sollicitudin. Nulla mattis rhoncus tortor, sit amet egestas dolor pharetra at.
+                            </p>
+                            <a href="#" class="btn btn-lg btn-default">
+                                <span class="oi oi-cart" title="All" aria-hidden="true"></span>
+                                <span>Purchase now</span>
+                            </a>
+                        </div>
+
+                    </div> <!-- / .pricing__item -->
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper -->
+    <!-- TEAM
+    ============================== -->
+    <div class="site-wrapper" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- Heading -->
+                    <h1 class="heading">
+                        They've <span class="text-primary">made</span> this possible
+                    </h1>
+
+                    <!-- Sub heading -->
+                    <p class="heading__sub">
+                        A team of hard-working enthusiastic people who helped this product come to life.
+                    </p>
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <!-- Team member -->
+                    <div class="team__member">
+
+                        <!-- Avatar -->
+                        <div class="team-member__avatar">
+                            <img class="img-responsive" src="assets/img/photo_2.jpg" alt="...">
+                        </div>
+
+                        <!-- Info -->
+                        <h4 class="team-member__name">Judy Doe</h4>
+                        <p class="team-member__info">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod.
+                        </p>
+
+                        <!-- Contact -->
+                        <div class="team-member__contact">
+                            <a href="#" class="team-member-contact__item facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="team-member-contact__item twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="team-member-contact__item google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+
+                    </div> <!-- / .team__member -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- Team member -->
+                    <div class="team__member team__member_chief">
+
+                        <!-- Avatar -->
+                        <div class="team-member__avatar">
+                            <img class="img-responsive" src="assets/img/photo_1.jpg" alt="...">
+                        </div>
+
+                        <!-- Info -->
+                        <h4 class="team-member__name">Richard Roe</h4>
+                        <p class="team-member__info">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                        </p>
+
+                        <!-- Contact -->
+                        <div class="team-member__contact">
+                            <a href="#" class="team-member-contact__item facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="team-member-contact__item twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="team-member-contact__item google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+
+                    </div> <!-- / .team__member -->
+
+                </div>
+                <div class="col-sm-4">
+
+                    <!-- Team member -->
+                    <div class="team__member">
+
+                        <!-- Avatar -->
+                        <div class="team-member__avatar">
+                            <img class="img-responsive" src="assets/img/photo_3.jpg" alt="...">
+                        </div>
+
+                        <!-- Info -->
+                        <h4 class="team-member__name">John Doe</h4>
+                        <p class="team-member__info">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod.
+                        </p>
+
+                        <!-- Contact -->
+                        <div class="team-member__contact">
+                            <a href="#" class="team-member-contact__item facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="team-member-contact__item twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="team-member-contact__item google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+
+                    </div> <!-- / .team__member -->
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper -->
+    <!-- FEATURES
+    ============================== -->
+    <div class="site-wrapper" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- Heading -->
+                    <h1 class="heading">
+                        Key <span class="text-primary">product</span> features
+                    </h1>
+
+                    <!-- Sub heading -->
+                    <p class="heading__sub">
+                        Even more reasons to purchase this template. More to come with a future update.
+                    </p>
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-sm-6 col-md-5 col-md-offset-1">
+
+                    <!-- Features item -->
+                    <div class="features__item">
+
+                        <!-- Title -->
+                        <h3 class="features-item__title">
+                            <span class="text-primary">01.</span>
+                            Five color options
+                        </h3>
+
+                        <!-- Summary -->
+                        <div class="features-item__summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                        </div>
+                    </div> <!-- / .features__item -->
+
+                </div>
+                <div class="col-sm-6 col-md-5">
+
+                    <!-- Features item -->
+                    <div class="features__item">
+
+                        <!-- Title -->
+                        <h3 class="features-item__title">
+                            <span class="text-primary">02.</span>
+                            Two menu types
+                        </h3>
+
+                        <!-- Summary -->
+                        <div class="features-item__summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                        </div>
+                    </div> <!-- / .features__item -->
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-sm-6 col-md-5 col-md-offset-1">
+
+                    <!-- Features item -->
+                    <div class="features__item">
+
+                        <!-- Title -->
+                        <h3 class="features-item__title">
+                            <span class="text-primary">03.</span>
+                            Fully Responsive
+                        </h3>
+
+                        <!-- Summary -->
+                        <div class="features-item__summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                        </div>
+                    </div> <!-- / .features__item -->
+
+                </div>
+                <div class="col-sm-6 col-md-5">
+
+                    <!-- Features item -->
+                    <div class="features__item">
+
+                        <!-- Title -->
+                        <h3 class="features-item__title">
+                            <span class="text-primary">04.</span>
+                            Built with LESS
+                        </h3>
+
+                        <!-- Summary -->
+                        <div class="features-item__summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                        </div>
+                    </div> <!-- / .features__item -->
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-sm-6 col-md-5 col-md-offset-1">
+
+                    <!-- Features item -->
+                    <div class="features__item">
+
+                        <!-- Title -->
+                        <h3 class="features-item__title">
+                            <span class="text-primary">05.</span>
+                            Functional contact form
+                        </h3>
+
+                        <!-- Summary -->
+                        <div class="features-item__summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                        </div>
+                    </div> <!-- / .features__item -->
+
+                </div>
+                <div class="col-sm-6 col-md-5">
+
+                    <!-- Features item -->
+                    <div class="features__item">
+
+                        <!-- Title -->
+                        <h3 class="features-item__title">
+                            <span class="text-primary">06.</span>
+                            Free future updates
+                        </h3>
+
+                        <!-- Summary -->
+                        <div class="features-item__summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at scelerisque diam, ut pellentesque leo. Morbi lacinia ut nibh eget euismod. Donec molestie odio sed leo interdum ultrices.
+                        </div>
+                    </div> <!-- / .features__item -->
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper -->
+    <!-- CONTACT
+    ============================== -->
+    <div class="site-wrapper" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- Heading -->
+                    <h1 class="heading">
+                        Feel free to  <span class="text-primary">contact us</span>
+                    </h1>
+
+                    <!-- Sub heading -->
+                    <p class="heading__sub">
+                        Do not hesitate to drop us a couple of lines. 24/7 support guaranteed.
+                    </p>
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+
+                    <!-- Alert message -->
+                    <div class="alert contact-form__alert" id="form_message" role="alert"></div>
+
+                    <!-- Contact form -->
+                    <!-- Please carefully read the README.txt file
+                     in order to setup the PHP contact form properly -->
+                    <form class="contact__form" id="form_sendemail">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-push-6">
+
+                                <!-- Message -->
+                                <div class="form-group">
+                                    <label for="message" class="sr-only">Your message</label>
+                                    <textarea name="message" class="form-control" rows="8" id="message" placeholder="Message"></textarea>
+                                    <span class="help-block"></span>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-sm-pull-6">
+
+                                <!-- Email address -->
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">Your email address</label>
+                                    <input name="email" class="form-control" id="email" placeholder="E-mail" type="email">
+                                    <span class="help-block"></span>
+                                </div>
+
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label for="name" class="sr-only">Your name</label>
+                                    <input name="name" class="form-control" id="name" placeholder="Full Name" type="text">
+                                    <span class="help-block"></span>
+                                </div>
+
+                                <!-- reCAPTCHA -->
+                                <div class="form-group" id="form-captcha">
+
+                                    <div class="g-recaptcha" data-sitekey="6LcU9QETAAAAABOKm4BoKrhzTvdIsrzXTsl4sgpY"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LcU9QETAAAAABOKm4BoKrhzTvdIsrzXTsl4sgpY&amp;co=aHR0cDovL3NpbXBsZXFvZGUuY29tOjgw&amp;hl=en&amp;v=r20160921114513&amp;size=normal&amp;cb=dqit6awqkmqx" title="recaptcha widget" role="presentation" scrolling="no" name="undefined" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                                    <span class="help-block"></span>
+                                </div>
+                                <!-- /reCAPTCHA -->
+
+                            </div>
+                            <div class="col-sm-12 text-center">
+
+                                <button type="submit" class="btn btn-lg btn-default">
+                                    <span class="oi oi-arrow-right" title="Send it" aria-hidden="true"></span>
+                                    <span>Send message</span>
+                                </button>
+
+                            </div>
+                        </div> <!-- / .row -->
+                    </form>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </div> <!-- / .site-wrapper -->
+    <!-- Google Map -->
+    <div class="site-wrapper">
+        <div id="map-canvas" class="contact__map" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; background-color: rgb(229, 227, 223);"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;" class="gm-style"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;" aria-hidden="true"><div style="width: 256px; height: 256px; position: absolute; left: 845px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 845px; top: 244px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 589px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 589px; top: 244px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1101px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1101px; top: 244px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 333px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 333px; top: 244px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1357px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1357px; top: 244px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 77px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 77px; top: 244px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1613px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1613px; top: 244px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -179px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -179px; top: 244px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1869px; top: -12px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1869px; top: 244px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;" aria-hidden="true"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 845px; top: -12px;"><canvas draggable="false" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" height="256" width="256"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 845px; top: 244px;"><canvas draggable="false" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" height="256" width="256"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 589px; top: -12px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 589px; top: 244px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1101px; top: -12px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1101px; top: 244px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 333px; top: -12px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 333px; top: 244px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1357px; top: -12px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1357px; top: 244px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 77px; top: -12px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 77px; top: 244px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1613px; top: -12px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1613px; top: 244px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -179px; top: -12px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -179px; top: 244px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1869px; top: -12px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1869px; top: 244px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;" aria-hidden="true"><div style="position: absolute; left: 845px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i9!3i11!4i256!2m3!1e0!2sm!3i366037138!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=110961" draggable="false" alt=""></div><div style="position: absolute; left: 845px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i9!3i12!4i256!2m3!1e0!2sm!3i366037138!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=15911" draggable="false" alt=""></div><div style="position: absolute; left: 589px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i8!3i11!4i256!2m3!1e0!2sm!3i366037078!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=59243" draggable="false" alt=""></div><div style="position: absolute; left: 589px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i8!3i12!4i256!2m3!1e0!2sm!3i366037078!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=95264" draggable="false" alt=""></div><div style="position: absolute; left: 1101px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i10!3i11!4i256!2m3!1e0!2sm!3i366037138!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=31864" draggable="false" alt=""></div><div style="position: absolute; left: 1101px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i10!3i12!4i256!2m3!1e0!2sm!3i366037138!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=67885" draggable="false" alt=""></div><div style="position: absolute; left: 333px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i7!3i11!4i256!2m3!1e0!2sm!3i366037078!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=2056" draggable="false" alt=""></div><div style="position: absolute; left: 333px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i7!3i12!4i256!2m3!1e0!2sm!3i366037078!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=38077" draggable="false" alt=""></div><div style="position: absolute; left: 1357px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i11!3i11!4i256!2m3!1e0!2sm!3i366037138!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=89051" draggable="false" alt=""></div><div style="position: absolute; left: 1357px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i11!3i12!4i256!2m3!1e0!2sm!3i366037138!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=125072" draggable="false" alt=""></div><div style="position: absolute; left: 77px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i6!3i11!4i256!2m3!1e0!2sm!3i366037030!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=30526" draggable="false" alt=""></div><div style="position: absolute; left: 77px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i6!3i12!4i256!2m3!1e0!2sm!3i366037030!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=66547" draggable="false" alt=""></div><div style="position: absolute; left: 1613px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i12!3i12!4i256!2m3!1e0!2sm!3i366037138!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=51188" draggable="false" alt=""></div><div style="position: absolute; left: 1613px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i12!3i11!4i256!2m3!1e0!2sm!3i366037138!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=15167" draggable="false" alt=""></div><div style="position: absolute; left: -179px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i5!3i11!4i256!2m3!1e0!2sm!3i366037030!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=104410" draggable="false" alt=""></div><div style="position: absolute; left: -179px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i5!3i12!4i256!2m3!1e0!2sm!3i366037030!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=9360" draggable="false" alt=""></div><div style="position: absolute; left: 1869px; top: -12px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i13!3i11!4i256!2m3!1e0!2sm!3i366034009!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=59726" draggable="false" alt=""></div><div style="position: absolute; left: 1869px; top: 244px; transition: opacity 200ms ease-out 0s;"><img style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i5!2i13!3i12!4i256!2m3!1e0!2sm!3i366034009!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=95747" draggable="false" alt=""></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%; transition-duration: 0.3s; opacity: 0; display: none;" class="gm-style-pbc"><p class="gm-style-pbt">Use two fingers to move the map</p></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a style="position: static; overflow: visible; float: none; display: inline;" target="_blank" href="https://maps.google.com/maps?ll=40.783381,-74.075853&amp;z=5&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps"><div style="width: 66px; height: 26px; cursor: pointer;"><img style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 802px; top: 160px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2016 Google, INEGI</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 69px; bottom: 0px; width: 151px;"><div draggable="false" style="-moz-user-select: none; height: 14px; line-height: 14px;" class="gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2016 Google, INEGI</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2016 Google, INEGI</div></div><div class="gmnoprint gm-style-cc" style="z-index: 1000001; -moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);" href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank">Terms of Use</a></div></div><div style="width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;" src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" draggable="false" class="gm-fullscreen-control"></div><div draggable="false" style="-moz-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;" class="gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" href="https://www.google.com/maps/@40.7833806,-74.0758533,5z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" style="margin: 10px; -moz-user-select: none; position: absolute; bottom: 107px; right: 28px;" draggable="false" controlwidth="28" controlheight="93"><div class="gmnoprint" style="position: absolute; left: 0px; top: 38px;" controlwidth="28" controlheight="55"><div draggable="false" style="-moz-user-select: none; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;"><div title="Zoom in" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><div title="Zoom out" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img style="position: absolute; left: 0px; top: -15px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false"></div></div></div></div><div class="gm-svpc" style="background-color: rgb(255, 255, 255); box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; position: absolute; left: 0px; top: 0px;" controlwidth="28" controlheight="28"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;" aria-label="Street View Pegman Control"><img style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false"></div><div style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;" aria-label="Pegman is on top of the Map"><img style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false"></div><div style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;" aria-label="Street View Pegman Control"><img style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false"></div></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); cursor: pointer; background-color: rgb(255, 255, 255); display: none;" title="Rotate map 90 degrees"><img style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false"></div><div style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);" class="gm-tilt"><img style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div style="float: left;" class="gm-style-mtc"><div style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); min-width: 20px; font-weight: 500;" draggable="false" title="Show street map">Map</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; left: 0px; top: 32px; text-align: left; display: none;"><div style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;" draggable="false" title="Show street map with terrain"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div style="float: left;" class="gm-style-mtc"><div style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-left: 0px none; min-width: 37px;" draggable="false" title="Show satellite imagery">Satellite</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; right: 0px; top: 32px; text-align: left; display: none;"><div style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;" draggable="false" title="Show imagery with street names"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div></div>
+    </div> <!-- / .site-wrapper -->
+    <!-- FOOTER
+    ============================== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    2015 © Liveeditions. All Rights Reserved.
+                </div>
+                <div class="col-xs col-sm-6">
+                    <div class="social__items">
+                        <a href="#" class="social__item">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social__item">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social__item">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div> <!-- / .social__links -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- JS Global -->
+
+    <!-- Mainly scripts -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+
+    <!-- JS Plugins -->
+    <script src="js/plugins/smoothscroll.min.js"></script>
+    <script src="js/plugins/jquery.waypoints.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/plugins/lightbox.min.js"></script>
+
+    <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;">
+    </div>
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <div class="lb-outerContainer">
+            <div class="lb-container">
+                <img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                <div class="lb-nav">
+                    <a class="lb-prev" href=""></a>
+                    <a class="lb-next" href=""></a>
+                </div>
+                <div class="lb-loader">
+                    <a class="lb-cancel"></a>
+                </div>
+            </div>
+        </div>
+        <div class="lb-dataContainer">
+            <div class="lb-data">
+                <div class="lb-details">
+                    <span class="lb-caption"></span>
+                    <span class="lb-number"></span>
+                </div>
+                <div class="lb-closeContainer">
+                    <a class="lb-close"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/contact.js"></script>
+      <!-- JS Custom -->
+    <script src="js/custom.js"></script>
+    <script src="js/preview.js"></script>
+
+
+
+    <div style="position: absolute; z-index: -10000; top: 0px; left: 0px; right: 0px; height: 5412px;"></div>
+    <div style="clear: both;"></div>
+
+</body>
+</html>
