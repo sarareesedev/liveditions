@@ -1,0 +1,98 @@
+﻿/* Large desktop :1920px. */
+@media (min-width: 1400px) and (max-width: 1920px) {
+    .container {
+        width: 1200px;
+    }
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container-wrapper {
+        width: 970px;
+    }
+
+    .container {
+        width: 970px;
+    }
+
+    .team-text-slider {
+        width: 84%;
+    }
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .team-text-slider {
+        padding: 30px 41px 0;
+        width: 100%;
+    }
+
+    .slick-prev, [data-carousel-3d] [data-prev-button] {
+        left: 0;
+    }
+
+    .slick-next, [data-carousel-3d] [data-next-button] {
+        right: 0;
+    }
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container-wrapper {
+        width: 320px;
+    }
+
+    .container {
+        width: 320px;
+    }
+
+    .team-area {
+        padding-top: 100px;
+    }
+
+    .slick-prev, [data-carousel-3d] [data-prev-button] {
+        left: 0;
+    }
+
+    .slick-next, [data-carousel-3d] [data-next-button] {
+        right: 0;
+    }
+
+    .team-text-slider {
+        padding: 30px 0 0;
+        width: 100%;
+    }
+
+    .teamText p {
+        margin-bottom: 10px;
+    }
+
+    .team-text-slider h2 {
+        font-size: 22px;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container-wrapper {
+        width: 450px;
+    }
+
+    .container {
+        width: 450px;
+    }
+
+    .sin-testiImage img {
+        height: 80px;
+        margin-top: 48px;
+        width: 80px;
+    }
+
+    .sin-testiImage.slick-current img {
+        height: 133px;
+        margin-top: 21px;
+        width: 133px;
+    }
+
+    .slick-prev, .slick-next {
+        top: 38%;
+    }
+}

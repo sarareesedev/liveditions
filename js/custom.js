@@ -1,13 +1,7 @@
-﻿/*------------------------------------------------------------------
-Project:        Wolfram
-Author:         Yevgeny Simzikov
-URL:            http://simpleqode.com/
-                https://twitter.com/YevSim
-                https://www.facebook.com/simpleqode
-Version:        2.2.2
-Created:        18/08/2014
-Last change:    07/07/2016
--------------------------------------------------------------------*/
+
+
+
+
 
 /* -------------------- *\
     GENERAL
@@ -143,8 +137,17 @@ if ($("body.classic").length) {
 
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 
+
+
+
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+
+
+
+
+
 
                 if (target.length) {
                     $('html, body').animate({
@@ -175,13 +178,13 @@ $(document).ready(function () {
             // Init Backstretch
 
             $(".backstretch-carousel").backstretch([
-                "assets/img/screen-bg_1.jpg",
-                "assets/img/screen-bg_2.jpg",
-                "assets/img/screen-bg_3.jpg",
-                "assets/img/screen-bg_4.jpg",
-                "assets/img/screen-bg_5.jpg",
-                "assets/img/screen-bg_6.jpg",
-                "assets/img/screen-bg_7.jpg"
+                "images/screen-bg_1.jpg",
+                "images/screen-bg_2.jpg",
+                "images/screen-bg_3.jpg",
+                "images/screen-bg_4.jpg",
+                "images/screen-bg_5.jpg",
+                "images/screen-bg_6.jpg",
+                "images/screen-bg_7.jpg"
             ], { duration: 1000, fade: 700 });
 
             // Pause Backstretch
@@ -196,8 +199,9 @@ $(document).ready(function () {
 
             // Plugin setup
 
+
             // Navigation
-            anchors: ['welcome', 'about', 'portfolio', 'pricing', 'team', 'features', 'contact'],
+            anchors: ['welcome', 'platform', 'benefits', 'features', 'about', 'team', 'contact'],
             menu: '.fullpage__nav',
             slidesNavigation: 'true',
 
@@ -240,4 +244,74 @@ $(document).ready(function () {
 
     };
 
+});
+
+
+//owl carousel for testimonials
+$(document).ready(function () {
+
+    $("#testi-carousel").owlCarousel({
+        // Most important owl features
+        items: 1,
+        itemsCustom: false,
+        itemsDesktop: [1199, 1],
+        itemsDesktopSmall: [980, 1],
+        itemsTablet: [768, 1],
+        itemsTabletSmall: false,
+        itemsMobile: [479, 1],
+        singleItem: false,
+        startDragging: true,
+        autoPlay: true
+    });
+
+});
+
+
+/*----------------------------
+    Wow js active
+------------------------------ */
+new WOW().init();
+
+/*--------------------------------
+	Team Slick Carousel
+-----------------------------------*/
+$('.team-text-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    draggable: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+/*------------------------------------
+	Team Slick Carousel as Nav
+--------------------------------------*/
+$('.team-image-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.team-text-slider',
+    dots: false,
+    arrows: true,
+    centerMode: true,
+    focusOnSelect: true,
+    centerPadding: '10px',
+    responsive: [
+        {
+            breakpoint: 450,
+            settings: {
+                dots: false,
+                slidesToShow: 3,
+                centerPadding: '0px',
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                autoplay: true,
+                dots: false,
+                slidesToShow: 1,
+                centerMode: false,
+            }
+        }
+    ]
 });
