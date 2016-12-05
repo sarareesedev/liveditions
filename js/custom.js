@@ -1,8 +1,3 @@
-
-
-
-
-
 /* -------------------- *\
     GENERAL
 \* -------------------- */
@@ -173,25 +168,25 @@ $(document).ready(function () {
 
     if ($("#fullpage").length) {
 
-        if ($(".backstretch-carousel").length) {
+        //if ($(".backstretch-carousel").length) {
 
-            // Init Backstretch
+        //    // Init Backstretch
 
-            $(".backstretch-carousel").backstretch([
-                "images/screen-bg_1.jpg",
-                "images/screen-bg_2.jpg",
-                "images/screen-bg_3.jpg",
-                "images/screen-bg_4.jpg",
-                "images/screen-bg_5.jpg",
-                "images/screen-bg_6.jpg",
-                "images/screen-bg_7.jpg"
-            ], { duration: 1000, fade: 700 });
+        //    $(".backstretch-carousel").backstretch([
+        //        "images/skins/bg_screen_01.jpeg",
+        //        "images/screen-bg_2.jpg",
+        //        "images/screen-bg_3.jpg",
+        //        "images/screen-bg_4.jpg",
+        //        "images/screen-bg_5.jpg",
+        //        "images/screen-bg_6.jpg",
+        //        "images/screen-bg_7.jpg"
+        //    ], { duration: 1000, fade: 700 });
 
-            // Pause Backstretch
+        //    // Pause Backstretch
 
-            $(".backstretch-carousel").backstretch("pause");
+        //    $(".backstretch-carousel").backstretch("pause");
 
-        }
+        //}
 
         var isToucheDevice = !!('ontouchstart' in window || navigator.maxTouchPoints);
 
@@ -219,6 +214,16 @@ $(document).ready(function () {
             paddingTop: '0',
             paddingBottom: '0',
 
+            afterLoad: function(anchorLink, index){
+                var loadedSection = $(this);
+
+                //using index
+                if(index == 1){
+                    $("#scrollUp").fadeOut("slow");
+                    $("#scrollUp").addClass("hide");
+                }
+            },
+
             onLeave: function (index, nextIndex, direction) {
 
                 // Make navbar active after leaving 1st section
@@ -230,6 +235,21 @@ $(document).ready(function () {
                 if (index != 1 && nextIndex == 1) {
                     $(".navbar").toggleClass("navbar__initial");
                 }
+
+                if (nextIndex == 1) {
+                    $("#scrollUp").fadeOut("slow");
+                    $("#scrollUp").addClass("hide");
+                  
+                }
+
+                if (nextIndex != 1) {
+                    $("#scrollUp").removeClass("hide");
+                    $("#scrollUp").fadeIn("slow");
+                   
+
+                   
+                }
+
 
                 // Change Backstretch image on fullPage scroll
 
